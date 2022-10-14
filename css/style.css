@@ -305,9 +305,12 @@
     position: absolute;
     top: 29px;
     left: 0;
-    display: none;
+    /* display: none; */
+    opacity: 0;
     transition: 0.5s;
     z-index: 1;
+    transform: rotateX(90deg) rotateZ(-2deg); 
+    transform-origin: left top;  
 }
 .navbar2 .nav-link .shop{
     display: flex;
@@ -340,7 +343,8 @@
     flex-direction: column;
 }
 .navbar2 .nav-link .shop-hover:hover .main-shop{
-    display: block;
+    opacity: 1;
+    transform: rotateX(0deg) rotateZ(0deg);
 }
 .navbar2 .nav-link .home .fa-caret-down{
     transform: rotate(270deg);
@@ -1367,7 +1371,7 @@
     background-color: #2a056f;
 }
 .main-socialmedia ul li a .social-icon:hover{
-    animation: social-icon-anim 0.5s;
+    animation: social-icon-anim 0.5s forwards;
 }
 @keyframes social-icon-anim{
     0%{
