@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: oswald;
-    src: url('../fonts/Oswald-VariableFont_wght.ttf');
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
 }
 .main{
     width: 100%;
